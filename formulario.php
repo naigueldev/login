@@ -28,19 +28,10 @@
   <body>
 
     <div class="container">
-      <div class="header clearfix">
-        <nav>
-          <ul class="nav nav-pills pull-right">
-            <br>
-            <li><a href="http://jjmontalban.com" target="_blank">ABOUT</a></li>
-          </ul>
-        </nav>
-        <h3 class="text-muted">Sistema login</h3>
-      </div>
 
       <div class="col-md-4 col-md-offset-4">
         <div class="jumbotron">
-          <form class="form-signin" action="comprueba_login.php" method="post">
+          <form class="form-signin" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
               <h2 class="form-signin-heading">Please sign in</h2>
               <label for="inputEmail" class="sr-only">Name</label>
               <input type="text" id="inputEmail" class="form-control" placeholder="user" required autofocus name="login">
@@ -50,7 +41,6 @@
           </form>
         </div> <!-- /container -->
       </div>
-
     </div> <!-- /container -->
 
 
